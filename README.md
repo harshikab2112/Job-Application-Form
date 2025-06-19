@@ -5,7 +5,7 @@ A responsive and semantically structured job application form built using **HTML
 ---
 
 ## Live Link
-![Demo Link](https://job-application-form-hb.vercel.app/)
+[Demo Link](https://job-application-form-hb.vercel.app/)
 
 ## 🌟 Features
 
