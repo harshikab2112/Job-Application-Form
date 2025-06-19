@@ -1,0 +1,118 @@
+/* ========== Global Styles ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ccc;
+}
+
+/* ========== Layout ========== */
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.body-box {
+  max-width: 600px;
+  padding: 20px;
+  background-color: white;
+  margin: 50px auto 0 auto;
+  box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+  border-radius: 10px;
+}
+
+fieldset {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+legend {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* ========== Form Controls ========== */
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline-color: grey;
+}
+
+.textarea-control {
+  grid-column: 1 / -1;
+}
+
+.textarea-control textarea {
+  width: 100%;
+}
+
+/* ========== Buttons ========== */
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  grid-column: 1/-1;
+}
+
+button {
+  background-color: grey;
+  border: transparent solid 2px;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 8px;
+  transition: 0.3s ease-in;
+}
+
+button:hover {
+  background-color: #6c4f4f;
+  border: 2px solid rgb(53, 48, 58);
+  color: black;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+/* ========== Responsive ========== */
+
+@media (max-width: 460px) {
+  .textarea-control {
+    grid-column: 1 / span 1;
+  }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Job Application</title>
+    </head>
+    <body>
+        <main class="container">
+            <div class="body-box">
+                <form action="/submit" method="post"
+                    enctype="multipart/form-data">
+                    <fieldset class="form-container">
+                        <legend><h1>Job Application</h1></legend>
+
+                        <!--First Name-->
+                        <div class="form-control">
+                            <label for="fname">First name</label>
+                            <input type="text" id="fname" name="fname"
+                                placeholder="Enter First Name..." required>
+                        </div>
+
+                        <!--Last Name-->
+                        <div class="form-control">
+                            <label for="lname">Last name</label>
+                            <input type="text" id="lname" name="lname"
+                                placeholder="Enter Last Name..." required>
+                        </div>
+
+                        <!--Email-->
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email"
+                                placeholder="Enter Email..." required></div>
+
+                        <!--Job Role-->
+                        <div class="form-control">
+                            <label for="role">Job Role</label>
+                            <select name="role" id="role" required>
+                                <option value>-- Select a Job Role --</option>
+                                <option value="softwareDeveloper">Software
+                                    Developer</option>
+                                <option value="frontendDeveloper">Frontend
+                                    Developer</option>
+                                <option value="backendDeveloper">Backend
+                                    Developer</option>
+                                <option value="fullstackDeveloper">Full Stack
+                                    Developer</option>
+                                <option value="uiuxDesigner">UI/UX
+                                    Designer</option>
+                                <option value="dataAnalyst">Data
+                                    Analyst</option>
+                                <option value="dataScientist">Data
+                                    Scientist</option>
+                                <option value="devOpsEngineer">DevOps
+                                    Engineer</option>
+                                <option value="qaEngineer">QA Engineer</option>
+                                <option value="productManager">Product
+                                    Manager</option>
+                                <option value="projectManager">Project
+                                    Manager</option>
+                                <option value="businessAnalyst">Business
+                                    Analyst</option>
+                                <option value="digitalMarketer">Digital
+                                    Marketer</option>
+                                <option value="seoSpecialist">SEO
+                                    Specialist</option>
+                                <option value="contentWriter">Content
+                                    Writer</option>
+                                <option value="technicalWriter">Technical
+                                    Writer</option>
+                                <option value="hrExecutive">HR
+                                    Executive</option>
+                                <option value="salesExecutive">Sales
+                                    Executive</option>
+                                <option value="customerSupport">Customer
+                                    Support</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+
+                        <!--Enter Address-->
+                        <div class="textarea-control">
+                            <label for="address">Enter Address</label>
+                            <textarea name="address" id="address" rows="4"
+                                cols="50"
+                                placeholder="Enter Address..."
+                                required></textarea>
+                        </div>
+
+                        <!--City-->
+                        <div class="form-control">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city"
+                                placeholder="Enter city name..." required></div>
+
+                        <!--Pincode-->
+                        <div class="form-control">
+                            <label for="pincode">Pincode</label>
+                            <input type="number" id="pincode" name="pincode"
+                                placeholder="Enter Pincode..."></div>
+
+                        <!--Start Date-->
+                        <div class="form-control">
+                            <label for="date">Start Date</label>
+                            <input type="date" name="date" id="date"
+                                value="2025-06-18"
+                                required>
+                        </div>
+
+                        <!--Upload Resume-->
+                        <div class="form-control">
+                            <label for="file">Upload your CV</label>
+                            <input type="file" id="file" name="file"
+                                accept=".pdf,.doc,.docx" required>
+                        </div>
+
+                        <!--Submit Button-->
+                        <div class="button-container">
+                            <button type="submit">Apply Now</button>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
